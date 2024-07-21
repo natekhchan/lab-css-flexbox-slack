@@ -20,7 +20,7 @@
 .footer ul {
   list-style-type: none;
   padding: 5px 20px;
-  line-height: 40px;
+  line-height: 55px;
   margin: 0;
 }
 
@@ -162,18 +162,18 @@
     background-color: #4049aa;
     color: white;
     border: none;
-    padding: 1.2rem 1.2rem;
-    font-size: 1rem;
+    padding: 1.8rem 1.8rem;
+    font-size: 1.5rem;
     cursor: pointer;
     margin-bottom: 0.25rem;
     border-radius: 6px;
     font-family: "Calibri";
     font-weight: bold;
-    width: 104%;
+    width: 100%;
   }
 
   .email-input {
-    width: 92.5%;
+    width: 90%;
     max-width: 100%;
     padding: 20px;
     font-size: 16px;
@@ -198,7 +198,7 @@
   .already-using-slack {
     font-family: "Calibri";
     text-align: center;
-    font-size: large;
+    font-size: x-large;
     color: #5e616f;
   }
 
@@ -220,33 +220,32 @@
   width: 100%;
 }
   
- .h2-quote {
-    font-size: 1.5rem;
+  .h2-quote {
+    font-size: 2.2rem;
     font-family: 'Times New Roman', Times, serif;
   }
   
   .good-company-description {
     font-family: "Calibri";
-    font-size: 20px;
+    font-size: 26px;
     margin-top: -1rem;
     margin-bottom: 1rem;
     color: #676a77;
-    padding-right: 40px;
-    padding-left: 40px;
   }
 
   .grey-section button {
     background-color: white;
     color: #1e2f9a;
     border: 1.5px solid #1e2f9a;
-    padding: 1rem 1rem;
+    padding: 2rem 1.5rem;
     margin-top: 2rem;
-    font-size: 1rem;
+    font-size: 1.5rem;
     cursor: pointer;
     margin-bottom: 2rem;
     font-weight: bolder;
-    max-width: 85%;
-    border-radius: 5px;
+    width: 90%;
+    max-width: 90%;
+    border-radius: 8px;
   }
   
   .grey-section img {
@@ -310,10 +309,10 @@
   }
 
   .already-using-slack-2 {
-    margin-top: -15px;
+    margin-top: -20px;
     color: black;
     font-family: "Calibri";
-    font-size: large;
+    font-size: x-large;
   }
 
   .try-it-for-free-section-2 {
@@ -341,7 +340,7 @@
   }
 
   .iso-slack {
-    max-width: 130px;
+    max-width: 100px;
     margin-bottom: 1rem;
   }
   
@@ -359,14 +358,14 @@
   .resources-links li:first-child,
   .extras-links li:first-child {
     font-weight: bold;
-    margin-bottom: -1.5rem;
+    margin-bottom: 0.5rem;
   }
 
   .subfooter {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 0.5rem 0;
+    padding: 2rem 0;
     background-color: #f5f5f5;
     padding-top: 5px;
     line-height: 40px;
@@ -398,7 +397,6 @@
     display: flex;
     align-items: center;
     margin-bottom: 1.5rem;
-    margin-top: -1rem;
     font-size: large;
     color: #6d6f7a;
     font-weight: bolder;
@@ -419,11 +417,10 @@
   }
   
   .social-icons i {
-    font-size: 20px;
+    font-size: 28px;
     margin: 0 10px;
     color: #6d6f7a;
     transition: color 0.3s ease;
-    margin-bottom: 5px;
   }
   
   .social-icons i:hover {
@@ -483,25 +480,28 @@
   .nav-items {
     position: fixed;
     top: 90px;
-    right:  -10%; /* Start off-screen to the right */
+    right: 0;
     bottom: 0;
     width: 100%;
-    height: calc(100% - 90px);
+    height: calc(100vh - 90px);
     background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    padding-top: 50px;
-    padding-left: 300px;
+    padding: 0;
     list-style-type: none;
     margin: 0;
-    overflow-y: hidden;
-    transition: transform 0.3s ease-in-out; /* Use transform for better performance */
-    transform: translateX(110%); /* Move it off-screen */
+    overflow: hidden;
+    transition: transform 0.3s ease-in-out;
+    transform: translateX(100%);
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content: space-evenly;
     align-items: flex-start;
-  }
+}
 
+/* Add this to your CSS file for the overflow to be hidden */
+   body.menu-open {
+    overflow: hidden;
+  }
   
   .nav-items.show {
     transform: translateX(0); /* Bring it into view */
@@ -555,7 +555,6 @@
     font-family: 'Times New Roman', Times, serif;
     line-height: 1.5;
     font-size: 73px;    
-    letter-spacing: -0.2rem;
   }
   
   p {
@@ -564,7 +563,7 @@
 
   p.slack-quote {
     font-family: 'Calibri';
-    font-size: 20px;
+    font-size: 30px;
     padding-top: 5px;
     padding-bottom: 35px;
     color: #5f626f;
@@ -579,55 +578,48 @@
   .input-button-container {
     display: flex;
     width: 100%;
-    height: 15px;
     margin-bottom: 1.7rem;
     }
 
-  .right-column .button-class {
+  .button-class {
     background-color: #4049aa;
     color: white;
     border: none;
-    padding: 14px;
-    font-size: 1rem;
+    padding: 1.8rem 1.8rem;
+    font-size: 1.5rem;
     cursor: pointer;
     margin-bottom: 0.25rem;
-    margin-left: 10px;
+    margin-left: 20px;
     border-radius: 6px;
     font-family: "Calibri";
     font-weight: bold;
-    /* Add these properties to center the text */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 40%;
    }
 
   .email-input {
-    width: 40%;
-    max-width: 40%;
-    padding-top: 1.8rem;
-    padding-bottom: 1.8rem;
+    width: 47%;
+    max-width: 47%;
+    padding-top: 20px;
+    padding-bottom: 20px;
     padding-left: 20px;
-    font-size: 20px;
+    font-size: 24px;
     color: #5f626f;
     font-family: "Calibri";
     border: 1px solid #ccc;
-    border-radius:6px;
-   }
+    border-radius: 4px;
+  }
   
   .email-input::placeholder {
     color: #5f626f;
     font-family: "Calibri";
-    font-size: 20px;    
+    font-size: 24px;
   }
 
   .already-using-slack {
     font-family: "Calibri";
     text-align: left;
-    font-size: large;
+    font-size: x-large;
     color: #5e616f;
-    margin-top: 60px;
+    margin-top: -5px;
   }
 
   .already-using-slack a {
@@ -649,17 +641,16 @@
 }
   
   .h2-quote {
-    font-size: 32px;
+    font-size: 42px;
     font-family: 'Times New Roman', Times, serif;
     margin-top: 40px;
     margin-left: 40px;
     margin-bottom: 7px;
-    letter-spacing: -2px;
   }
   
   .good-company-description {
     font-family: "Calibri";
-    font-size: 18px;
+    font-size: 26px;
     margin-bottom: 1rem;
     color: #676a77;
   }
@@ -725,7 +716,7 @@
     margin-left: 40px;
     color: black;
     font-family: "Calibri";
-    font-size: medium;
+    font-size: x-large;
     margin-top: 0;
     }
 
@@ -757,10 +748,10 @@
     margin-bottom: 10px;
   }
    
-  .right-column .email-input {
+  .email-input {
     flex: 1;
     min-width: 80px; /* Adjust this value as needed */
-    padding: 12px;
+    padding: 30px;
   }
 
   /* Footer */
@@ -1458,7 +1449,6 @@
         font-family: 'Times New Roman', Times, serif;
         line-height: 1;
         font-size: 6rem; /* Size for header */
-        letter-spacing: -0.5rem;
     }
     
     p.slack-quote {
@@ -1546,7 +1536,6 @@
         margin-top: 40px;
         margin-left: 40px;
         margin-bottom: 7px;
-        letter-spacing: -0.15rem;
       }
       
       .good-company-description {
